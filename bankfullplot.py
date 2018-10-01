@@ -1,9 +1,11 @@
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Spyder Editor
+Created on Sun Sep 30 21:30:02 2018
 
-Este é um arquivo de script temporário.
+@author: gisele
 """
+
 # Import `os` 
 import os
 import pandas as pd
@@ -39,6 +41,3 @@ dfobj= pd.DataFrame(data, columns=['job', 'loan', 'y'])
 df = dfobj.groupby(['job'])['loan','y'].sum()
 plt.figure(figsize=(12, 8))
 df.plot.bar()
-
-
-
